@@ -14,6 +14,11 @@
     
 }
 
+nav
+{
+    height: 120px;
+    transition:easein 2s;
+}
 
 
 
@@ -25,7 +30,7 @@
     left:0;
     right:0;
     bottom:0;
-    background-color:#000; /* change if the mask should have another color then white */
+    background-color:#344557; /* change if the mask should have another color then white */
     z-index:999; /* makes sure it stays on top */
 }
 
@@ -35,7 +40,7 @@
     position:absolute;
     left:50%; /* centers the loading animation horizontally one the screen */
     top:50%; /* centers the loading animation vertically one the screen */
-    background-image:url(../images/pre.gif); /* path to your loading animation */
+    background-image:url(../images/gyro.gif); /* path to your loading animation */
     background-repeat:no-repeat;
     background-position:center;
     margin:-100px 0 0 -100px; /* is width and height divided by two */

@@ -2,7 +2,7 @@
 
 <head>
     <title>
-        Home:Sayan
+        Home | Sayan
     </title>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -42,35 +42,41 @@
 
 <!--Nav-Bar-->
 <div class="navbar-fixed">
-<nav class="indigo">
-<a href="#!" class="brand-logo center">My DICK Pic</a>
+<nav id="nav" class="indigo">
+<a href="#!" class="brand-logo center">Sayan</a>
 
 
 <ul id="slide-out" class="side-nav" style="background-color:#78909C">
-   <li class="center disabled"><h3>Snbk97</h3></li>
-   
-    <li><a class="wave-dark" style="color:white" href="#!">First Sidebar Link</a></li>
-    <li><a href="#!">Second Sidebar Link</a></li>
-    <li class="no-padding">
-        <ul class="collapsible collapsible-accordion">
-            <li>
-                <a class="collapsible-header">Dropdown<i class="mdi-navigation-arrow-drop-down"></i></a>
-                <div class="collapsible-body">
-                    <ul>
-                        <li><a href="#!">First</a></li>
-                        <li><a href="#!">Second</a></li>
-                        <li><a href="#!">Third</a></li>
-                        <li><a href="#!">Fourth</a></li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
-    </li>
-</ul>
+	<li class="center disabled"><h3>Snbk97</h3></li>
 
+	<li><a class="wave-dark" style="color:white" href="#!">First Sidebar Link</a></li>
+	<li><a href="#!">Second Sidebar Link</a></li>
+	<li class="no-padding">
+	<ul class="collapsible collapsible-accordion">
+	<li><a class="collapsible-header">Dropdown<i class="mdi-navigation-arrow-drop-down"></i></a>
+<div class="collapsible-body">
+			<ul>
+			<li><a href="#!">First</a></li>
+			<li><a href="#!">Second</a></li>
+			<li><a href="#!">Third</a></li>
+			<li><a href="#!">Fourth</a></li>
+			</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
 <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">more_horizontal</i>
 </a>
 
+<br>
+
+<ul class="" id="temp_menu">
+<li><a href="#!">First</a></li>
+<li><a href="#!">Second</a></li>
+<li><a href="#!">Third</a></li>
+<li><a href="#!">Fourth</a></li>
+</ul>
 </nav>
 </div>
 <!--Nav-Bar-->
@@ -80,36 +86,54 @@
 
 
 
-<div class="tile tooltipped" data-position="bottom" data-delay="1" data-tooltip="Click me Asshole!" onclick="Materialize.toast('Hello Asshole',2000,'blue-grey')">
-    <h1>Hello and Fuck you !</h1>
+<div class="tile tooltipped">
+    <h3>Hello and Welcome!</h3>
 </div>
 
-<center>
-<div id="lol" style="width:300px;">
- <div class="progress white">
-      <div class="indeterminate"></div>
-  </div>
-    </div>
-    </center>
+<div class="space" style="height:1000px"></div>
 
 
 
 <script>
-    $(document).ready(function(){
-        $(".button-collapse").sideNav();
-        $('.tile').hide();        
-        
-        
-    });
-    
-    $(window).load(function(){
-        $('.tile').slideDown(3100).removeClass('hide');
-        
-        
-    });
-    
-    
+$(document).ready(function(){
+$(".button-collapse").sideNav();
+$('.tile').hide();        
 
+
+});
+
+$(window).load(function(){
+$('.tile').slideDown(3100).removeClass('hide');
+
+
+});
+
+</script>
+<!--__Nav collapse__-->
+<script type="text/javascript">
+function Scroll() {
+var top = document.getElementById('nav');
+var temp = document.getElementById('temp_menu')
+var ypos = window.pageYOffset;
+var height = window.innerHeight;
+var real = (height * 16) / 100;
+
+if (ypos > real) {
+top.style.height = "60px";
+top.style.WebkitTransition = 'linear 0.3s';
+temp.style.opacity = "0";
+temp.style.WebkitTransition = 'linear 0.01s';
+
+} else {
+top.style.height = "120px";
+top.style.WebkitTransition = 'linear 0.3s';
+temp.style.opacity = "100";
+temp.style.WebkitTransition = 'linear 1.5s';
+
+}
+}
+
+window.addEventListener("scroll", Scroll);
 </script>
 
 </body>
