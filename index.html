@@ -70,13 +70,14 @@
 </a>
 
 <br>
-
-<ul class="" id="temp_menu">
+<div class="bot_menu center" >
+<ul class="center" id="temp_menu">
 <li><a href="#!">First</a></li>
 <li><a href="#!">Second</a></li>
 <li><a href="#!">Third</a></li>
 <li><a href="#!">Fourth</a></li>
 </ul>
+</div>
 </nav>
 </div>
 <!--Nav-Bar-->
@@ -121,14 +122,18 @@ var real = (height * 16) / 100;
 if (ypos > real) {
 top.style.height = "60px";
 top.style.WebkitTransition = 'linear 0.3s';
+top.style.Mozransition = 'linear 0.3s';
 temp.style.opacity = "0";
 temp.style.WebkitTransition = 'linear 0.01s';
+temp.style.MozTransition = 'linear 0.01s';
 
 } else {
 top.style.height = "120px";
 top.style.WebkitTransition = 'linear 0.3s';
+top.style.MozTransition = 'linear 0.3s';
 temp.style.opacity = "100";
 temp.style.WebkitTransition = 'linear 1.5s';
+temp.style.MozTransition = 'linear 1.5s';
 
 }
 }
