@@ -1,0 +1,116 @@
+<html>
+
+<head>
+    <title>
+        Main
+    </title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="js/jquery-1.11.3.min.js"></script>
+    
+    <script src="js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel=stylesheet href="css/main.css">
+    <script src="js/preload.js"></script>
+
+    
+    </head>
+<body bgcolor="#37474F" onload="Materialize.toast('Hello Asshole',2000,'blue-grey')">
+<!--Preloader-->
+<div id="preloader">
+        <div id="status">&nbsp;</div>
+</div>
+<!--Preloader-->
+
+<!--FAB-->
+<div class="fixed-action-btn click-to-toggle" style="bottom:45px; right:24px">
+<a class="btn-floating btn-large red">
+    <i class="material-icons">add</i>
+</a>
+<ul>
+    <li><a href="#" class="btn-floating orange tooltipped" data-position="left" data-delay=9 data-tooltip="Thumbs Up" onclick="Materialize.toast('Thanks Bitch !',1000,'blue')"><i class="material-icons">thumb_up</i></a>
+    <li><a href="#" class="btn-floating tooltipped" style="background-color:#FF3D00"  data-position="left" data-delay=9 data-tooltip="Thumbs Down" onclick="Materialize.toast('Fuck you Bitch !',1000,'red')"><i class="material-icons">thumb_down</i></a>
+    <li><a href="#" class="btn-floating tooltipped"  data-position="left" data-delay=9 data-tooltip="This is a Label">
+    <i class="material-icons">label_outline</i></a>
+    <li><a href="#" class="btn-floating green tooltipped"  data-position="left" data-delay=9 data-tooltip="Ignore Me">
+    <i class="material-icons">dialpad</i></a>
+</ul>
+    
+</div>
+<!--FAB-->
+
+<!--Nav-Bar-->
+<div class="navbar-fixed">
+<nav class="indigo">
+<a href="#!" class="brand-logo center">My DICK Pic</a>
+
+
+<ul id="slide-out" class="side-nav" style="background-color:#78909C">
+   <li class="center disabled"><h3>Snbk97</h3></li>
+   
+    <li><a class="wave-dark" style="color:white" href="#!">First Sidebar Link</a></li>
+    <li><a href="#!">Second Sidebar Link</a></li>
+    <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+            <li>
+                <a class="collapsible-header">Dropdown<i class="mdi-navigation-arrow-drop-down"></i></a>
+                <div class="collapsible-body">
+                    <ul>
+                        <li><a href="#!">First</a></li>
+                        <li><a href="#!">Second</a></li>
+                        <li><a href="#!">Third</a></li>
+                        <li><a href="#!">Fourth</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">more_horizontal</i>
+</a>
+
+</nav>
+</div>
+<!--Nav-Bar-->
+
+
+
+
+
+
+<div class="tile">
+    <h1>Hello and Fuck you !</h1>
+</div>
+
+<center>
+<div id="lol" style="width:300px;">
+ <div class="progress white">
+      <div class="indeterminate"></div>
+  </div>
+    </div>
+    </center>
+
+
+
+<script>
+    $(document).ready(function(){
+        $(".button-collapse").sideNav();
+        $('.tile').hide();        
+        
+        
+    });
+    
+    $(window).load(function(){
+        $('.tile').slideDown(3100).removeClass('hide');
+        
+        
+    });
+    
+    
+
+</script>
+
+</body>
+
+</html>
