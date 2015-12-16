@@ -20,6 +20,36 @@ nav
     transition:easein 2s;
 }
 
+#mainBody
+{
+    background-color: #fff;
+    border-radius: 4px;
+    height: 200px;
+    width: 80%;
+    float: center;
+    margin:10%;
+}
+
+.content
+{
+
+    border-radius: 4px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top:1%;
+    box-shadow: 0px 1px 50px 0px #000;
+}
+
+
+.mcenter
+{
+    position: relative;
+    float: center;
+    text-align: right;
+}
+
+
+
 
 
 /* Preloader */
@@ -30,7 +60,8 @@ nav
     left:0;
     right:0;
     bottom:0;
-    background-color:#344557; /* change if the mask should have another color then white */
+    /*background-color:#344557;  change if the mask should have another color then white */
+    background-color:#262626;
     z-index:999; /* makes sure it stays on top */
 }
 
@@ -40,7 +71,7 @@ nav
     position:absolute;
     left:50%; /* centers the loading animation horizontally one the screen */
     top:50%; /* centers the loading animation vertically one the screen */
-    background-image:url(../images/gyro.gif); /* path to your loading animation */
+    background-image:url(../images/pre-blink.gif); /* path to your loading animation */
     background-repeat:no-repeat;
     background-position:center;
     margin:-100px 0 0 -100px; /* is width and height divided by two */
