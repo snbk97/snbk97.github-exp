@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>
@@ -6,13 +7,20 @@
 		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<script src="js/jquery-1.11.3.min.js"></script>
-		
+		<script src="js/jquery.stellar.js"></script>
+
 		<script src="js/materialize.min.js"></script>
 		<link rel="stylesheet" href="css/materialize.min.css">
-		<link rel=stylesheet href="css/main.css">
+		<link rel="stylesheet" href="css/main.css">
 		<script src="js/preload.js"></script>
-		<link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon'/ >
-		
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<script>
+        $(document).ready(function () {
+            $(window).stellar();
+
+        });
+    </script>
+
 	</head>
 	<body bgcolor="#37474F">
 		<!--Preloader-->
@@ -26,14 +34,12 @@
 				<i class="material-icons">add</i>
 			</a>
 			<ul>
-				<li><a href="#" class="btn-floating orange tooltipped" data-position="left" data-delay=9 data-tooltip="Thumbs Up" onclick="Materialize.toast('Thanks Bitch !',1000,'blue')"><i class="material-icons">thumb_up</i></a>
-				<li><a href="#" class="btn-floating tooltipped" style="background-color:#FF3D00"  data-position="left" data-delay=9 data-tooltip="Thumbs Down" onclick="Materialize.toast('Fuck you Bitch !',1000,'red')"><i class="material-icons">thumb_down</i></a>
-				<li><a href="#" class="btn-floating tooltipped"  data-position="left" data-delay=9 data-tooltip="This is a Label">
-				<i class="material-icons">label_outline</i></a>
-				<li><a href="#" class="btn-floating green tooltipped"  data-position="left" data-delay=9 data-tooltip="Ignore Me">
-				<i class="material-icons">dialpad</i></a>
+				<li><a href="#" class="btn-floating orange tooltipped" data-position="left" data-delay="9" data-tooltip="Thumbs Up" onclick="Materialize.toast('Thank You!',1000,'blue')"><i class="material-icons">thumb_up</i></a></li>
+				<li><a href="#" class="btn-floating tooltipped" style="background-color:#FF3D00"  data-position="left" data-delay="9" data-tooltip="Thumbs Down" onclick="Materialize.toast('Hmm.. OK!',1000,'red')"><i class="material-icons">thumb_down</i></a></li>
+				<li><a href="#" class="btn-floating tooltipped"  data-position="left" data-delay="9" data-tooltip="This is a Label"><i class="material-icons">label_outline</i></a></li>
+				<li><a href="#" class="btn-floating green tooltipped"  data-position="left" data-delay="9" data-tooltip="Ignore Me"><i class="material-icons">dialpad</i></a></li>
 			</ul>
-			
+
 		</div>
 		<!--FAB-->
 		<!--Nav-Bar-->
@@ -62,22 +68,23 @@
 			<a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">more_horizontal</i>
 			</a>
 			<br>
-			<div class="botMenu">
+			<div class="botMenu" style="float:center">
+				<div style="width:30px"></div>
 				<ul class="center" id="temp_menu">
-					<li class="center"><a href="#!">First</a></li>
+					<li><a href="#!">First</a></li>
 					<li><a href="#!">Second</a></li>
 					<li><a href="#!">Third</a></li>
 					<li><a href="#!">Fourth</a></li>
 				</ul>
 			</div>
 		</nav>
-	</div>
+		</div>
 	<!--Nav-Bar-->
-	<div class="tile">
+	<!--<div class="tile">
 		<h3>Hello and Welcome!</h3>
-	</div>
-	
-	<div id="mainBody">
+	</div>-->
+	<div class="pic" id="wall" style="background-image: url(images/wall-1.jpg);" data-stellar-background-ratio="-0.15"></div>
+	<div id="mainBody" data-stellar-background-ratio="0.25">
 		<div id="post1" class="content">
 			<h4>Hello Stranger!</h4>
 			<hr>
@@ -86,9 +93,10 @@
 			Still Under Contruction.<br><br>
 			Please ignore the mess !
 
+
 			</p>
 		</div>
-		
+
 	</div>
 	<div style="height:500px"></div>
 
@@ -110,7 +118,7 @@
 	var temp = document.getElementById('temp_menu')
 	var ypos = window.pageYOffset;
 	var height = window.innerHeight;
-	var real = (height * 16) / 100;
+	var real = (height * 10) / 100;
 	if (ypos > real) {
 	top.style.height = "60px";
 	top.style.WebkitTransition = 'linear 0.3s';
@@ -129,6 +137,7 @@
 	}
 	window.addEventListener("scroll", Scroll);
 	</script>
+
 
 </body>
 </html>
