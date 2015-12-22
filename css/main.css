@@ -4,13 +4,12 @@
 }
 ::-webkit-scrollbar {
     width: 5px;
-    background-color: #3a5066 ;
+    background-color: #34495e;
 }
 ::-webkit-scrollbar-thumb {
     border-radius: 50px;
-    height: 20px;
-    -webkit-box-shadow: inset 0 10px 6px rgba(0,0,0,0.5);
-    background-color: #8cb5dd ;
+    -webkit-box-shadow: inset 0 10px 6px rgba(45, 43, 43, 0.5);
+    background-color: #ada8a8 ;
     z-index: 1;
 }
 
@@ -46,7 +45,7 @@ nav {
 #mainBody {
   background-color: #fff;
   border-radius: 4px;
-  box-shadow: 0 2px 60px 5px rgba(0,0,0,0.8);
+  box-shadow: 0 0.5px 18px 2px rgba(0,0,0,0.3);
   height: 200px;
   width: 80%;
   float: center;
