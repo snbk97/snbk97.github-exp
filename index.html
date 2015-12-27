@@ -25,14 +25,13 @@
 		</script>
 	</head>
 	<body bgcolor="#e8e8e8" onload="$('#wall').animatescroll({scrollSpeed:0,});">
-
 		<!--Preloader-->
 		<div id="preloader">
 			<div id="status">&nbsp;</div>
 		</div>
 		<!--Preloader-->
 		<!--FAB-->
-		<div class="fixed-action-btn click-to-toggle" style="bottom:35px; right:24px">
+		<div class="fixed-action-btn" style="bottom:35px; right:24px">
 			<a class="btn-floating btn-large waves-effect waves-dark red">
 				<i class="material-icons">add</i>
 			</a>
@@ -64,37 +63,37 @@
 				<a onclick="$('#wall').animatescroll({easing:'easeInOutExpo',scrollSpeed:1000});" class="brand-logo center">
 					<img class="tooltipped" data-position="right" data-delay="1" data-tooltip="Sayan Bhowmik" height="60px" src="images/head.png">
 				</a>
-				<ul id="slide-out" class="side-nav" style="background-color:#78909C">
-					<li class="center disabled" style="height:60px">
-						<h3><img src="images/head.png" alt="logo" height="60px" style="float:center; display:inline-block;"></h3><br>
-					</li><hr>
-					<li><a class="wave-dark" style="color:white" href="#!">First Sidebar Link</a></li>
-					<li><a style="color:white" href="#!">Second Sidebar Link</a></li>
-					<li class="no-padding">
-						<ul class="collapsible collapsible-accordion">
-							<li><a class="collapsible-header" style="color:white" >Dropdown<i class="mdi-navigation-arrow-drop-down"></i></a>
-							<div class="collapsible-body">
-								<ul>
-									<li><a href="#!">First</a></li>
-									<li><a href="#!">Second</a></li>
-									<li><a href="#!">Third</a></li>
-									<li><a href="#!">Fourth</a></li>
-								</ul>
-							</div>
-						</li>
-					</ul>
+				<!--<ul id="slide-out" class="side-nav" style="background-color:#78909C">
+						<li class="center disabled" style="height:60px">
+								<h3><img src="images/head.png" alt="logo" height="60px" style="float:center; display:inline-block;"></h3><br>
+						</li><hr>
+						<li><a class="wave-dark" style="color:white" href="#!">First Sidebar Link</a></li>
+						<li><a style="color:white" href="#!">Second Sidebar Link</a></li>
+						<li class="no-padding">
+								<ul class="collapsible collapsible-accordion">
+										<li><a class="collapsible-header" style="color:white" >Dropdown<i class="mdi-navigation-arrow-drop-down"></i></a>
+										<div class="collapsible-body">
+												<ul>
+														<li><a href="#!">First</a></li>
+														<li><a href="#!">Second</a></li>
+														<li><a href="#!">Third</a></li>
+														<li><a href="#!">Fourth</a></li>
+												</ul>
+										</div>
+								</li>
+						</ul>
 				</li>
 			</ul>
 			<a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">more_horizontal</i>
-			</a>
+			</a>-->
 			<br>
 			<center>
 			<div class="botMenu" style="float:center;display:inline-block">
-				<ul class="center" id="temp_menu">
-					<li><a onclick="$('#work').animatescroll({scrollSpeed:1500,easing:'easeInQuint',padding:80});">Work</a></li>
-					<li><a onclick="$('#about').animatescroll({scrollSpeed:2500,easing:'easeOutBounce',padding:80});">About Me</a></li>
-					<li><a onclick="$('#social').animatescroll({scrollSpeed:2000,easing:'easeInOutSine',padding:80});">Social</a></li>
-					<li><a onclick="$('#contact').animatescroll({scrollSpeed:2000,easing:'easeInCirc',padding:80});">Contact</a></li>
+				<ul class="center" id="temp_menu"8>
+					<li><a onclick="$('#work').animatescroll({scrollSpeed:800,easing:'easeOutSine',padding:80});">Work</a></li>
+					<li><a onclick="$('#about').animatescroll({scrollSpeed:800,easing:'easeOutSine',padding:80});">About Me</a></li>
+					<li><a onclick="$('#social').animatescroll({scrollSpeed:800,easing:'easeOutSine',padding:80});">Social</a></li>
+					<li><a onclick="$('#contact').animatescroll({scrollSpeed:800,easing:'easeOutSine',padding:80});">Contact</a></li>
 				</ul>
 			</div>
 			</center>
@@ -122,63 +121,59 @@
 	</div>
 	<div class="card waves-effect waves-dark" id="about">
 		<div id="post3" class="content">
-				<h4>About me</h4>
-				<hr>
-				<p>
-					
-		</div>
-		</center>
-	</div>
-
-	<div class="card waves-effect waves-dark" id="social">
-		<div id="post4" class="content">
-		<h4>Social</h4>
-		<hr>
-		
-
-
-		</p>
+			<h4>About me</h4>
+			<hr>
+			<p>
 				
+			</div>
+			</center>
+		</div>
+		<div class="card waves-effect waves-dark" id="social">
+			<div id="post4" class="content">
+				<h4>Social</h4>
+				<hr>
+				
+			</p>
+			
 		</div>
 		</center>
 	</div>
-
-<div class="card" id="contact" style="height:540px">
-	<div id="post4" class="content">
-		<h4>Contact me</h4>
-		<hr><div style="height:20px"></div>
-		<div class="row">
-			<form class="col s12">
-				<div class="row">
-					<div class="input-field col s6">
-						<input id="first_name" type="text" class="validate">
-						<label for="first_name">First Name</label>
+	<div class="card" id="contact" style="height:540px">
+		<div id="post4" class="content">
+			<h4>Contact me</h4>
+			<hr><div style="height:20px"></div>
+			<div class="row">
+				<form class="col s12">
+					<div class="row">
+						<div class="input-field col s6">
+							<input id="first_name" type="text" class="validate">
+							<label for="first_name">First Name</label>
+						</div>
+						<div class="input-field col s6">
+							<input id="last_name" type="text" class="validate">
+							<label for="last_name">Last Name</label>
+						</div>
 					</div>
-					<div class="input-field col s6">
-						<input id="last_name" type="text" class="validate">
-						<label for="last_name">Last Name</label>
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="email" type="email" class="validate">
+							<label for="email">Email</label>
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="input-field col s12">
-						<input id="email" type="email" class="validate">
-						<label for="email">Email</label>
+					<div class="row">
+						<div class="input-field col s12">
+							<textarea id="textarea1" class="materialize-textarea"></textarea>
+							<label for="textarea1">Say Something</label>
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="input-field col s12">
-						<textarea id="textarea1" class="materialize-textarea"></textarea>
-						<label for="textarea1">Say Something</label>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col s12">
-						<input type="checkbox" id="test6" checked="checked" />
-						<label for="test6">Subscribe to Newsletter</label>
-					</div>
-					
+					<div class="row">
+						<div class="col s12">
+							<input type="checkbox" id="test6" checked="checked" />
+							<label for="test6">Subscribe to Newsletter</label>
+						</div>
+						
 						<a style="float:right" class="waves-effect waves-light btn"><i class="material-icons left">send</i>Submit</a>
-					
+						
 					</div>
 				</form>
 			</div>
@@ -187,47 +182,43 @@
 		</center>
 	</div>
 </div>
-
-
-
-	<script>
-		$(document).ready(function() {
-			$(".button-collapse").sideNav();
-
-		});
-	</script>
-	<!--__Nav collapse__-->
-	<script type="text/javascript">
-		function Scroll() {
-			var top = document.getElementById('nav');
-			var temp = document.getElementById('temp_menu')
-			var ypos = window.pageYOffset;
-			var height = window.innerHeight;
-			var real = (height * 10) / 100;
-			if (ypos > real) {
-				top.style.height = "60px";
-				top.style.WebkitTransition = 'linear 0.3s';
-				top.style.Mozransition = 'linear 0.3s';
-				temp.style.opacity = "0";
-				temp.style.WebkitTransition = 'linear 0.01s';
-				temp.style.MozTransition = 'linear 0.01s';
-			} else {
-				top.style.height = "120px";
-				top.style.WebkitTransition = 'linear 0.3s';
-				top.style.MozTransition = 'linear 0.3s';
-				temp.style.opacity = "100";
-				temp.style.WebkitTransition = 'linear 1.5s';
-				temp.style.MozTransition = 'linear 1.5s';
-			}
+<script>
+	$(document).ready(function() {
+		$(".button-collapse").sideNav();
+	});
+</script>
+<!--__Nav collapse__-->
+<script type="text/javascript">
+	function Scroll() {
+		var top = document.getElementById('nav');
+		var temp = document.getElementById('temp_menu')
+		var ypos = window.pageYOffset;
+		var height = window.innerHeight;
+		var real = (height * 10) / 100;
+		if (ypos > real) {
+			top.style.height = "60px";
+			top.style.WebkitTransition = 'linear 0.3s';
+			top.style.Mozransition = 'linear 0.3s';
+			temp.style.opacity = "0";
+			temp.style.WebkitTransition = 'linear 0.01s';
+			temp.style.MozTransition = 'linear 0.01s';
+		} else {
+			top.style.height = "120px";
+			top.style.WebkitTransition = 'linear 0.3s';
+			top.style.MozTransition = 'linear 0.3s';
+			temp.style.opacity = "100";
+			temp.style.WebkitTransition = 'linear 1.5s';
+			temp.style.MozTransition = 'linear 1.5s';
 		}
-		window.addEventListener("scroll", Scroll);
-	</script>
+	}
+	window.addEventListener("scroll", Scroll);
+</script>
 </body><br>
 <footer class="page-footer" style="background-color:#34495e" data-stellar-background-ratio="-0.15">
-	<div class="footer-copyright">
-		<div class="container">&#169; 2016-17 Snbk97
-			<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-		</div>
+<div class="footer-copyright">
+	<div class="container">&#169; 2016-17 Snbk97
+		<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
 	</div>
+</div>
 </footer>
 </html>
