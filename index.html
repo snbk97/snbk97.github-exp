@@ -1,87 +1,78 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-	<title>
+	<head>
+		<title>
 		Home | Sayan
-	</title>
-	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<script src="js/jquery-1.11.3.min.js"></script>
-	<script src="js/jquery.stellar.js"></script>
+		</title>
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/animatescroll.min.js"></script>
+		<script src="js/jquery.stellar.js"></script>
+		<meta http-equiv="cache-control" content="no-store">
+		<meta http-equiv="expires" content="-1">
+		<meta http-equiv="pragma" content="no-store">
+		<script src="js/materialize.min.js"></script>
+		<link rel="stylesheet" href="css/materialize.min.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/preload.js"></script>
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<script>
+			$(document).ready(function() {
+				$(window).stellar();
+				//$('#modal1').openModal("slow");
+			});
+		</script>
+	</head>
+	<body bgcolor="#e8e8e8" onload="$('#wall').animatescroll({scrollSpeed:0,});">
 
-	<meta http-equiv="cache-control" content="no-store">
-<meta http-equiv="expires" content="0">
-<meta http-equiv="pragma" content="no-store">
-
-	<script src="js/materialize.min.js"></script>
-	<link rel="stylesheet" href="css/materialize.min.css">
-	<link rel="stylesheet" href="css/main.css">
-	<script src="js/preload.js"></script>
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<script>
-		$(document).ready(function() {
-			$(window).stellar();
-			$('#modal1').openModal("slow");
-
-
-		});
-	</script>
-
-
-</head>
-
-<body bgcolor="#e8e8e8">
-	<!--Preloader-->
-	<div id="preloader">
-		<div id="status">&nbsp;</div>
-	</div>
-	<!--Preloader-->
-	<!--FAB-->
-	<div class="fixed-action-btn click-to-toggle" style="bottom:35px; right:24px">
-		<a class="btn-floating btn-large waves-effect waves-dark red">
-			<i class="material-icons">add</i>
-		</a>
-		<ul>
-			<li><a href="#" class="btn-floating orange tooltipped" data-position="left" data-delay="9" data-tooltip="Thumbs Up" onclick="Materialize.toast('Thank You!',1000,'blue')"><i class="material-icons">thumb_up</i></a></li>
-			<li><a href="#" class="btn-floating tooltipped" style="background-color:#FF3D00" data-position="left" data-delay="9" data-tooltip="Thumbs Down" onclick="Materialize.toast('Hmm.. OK!',1000,'red')"><i class="material-icons">thumb_down</i></a></li>
-			<li><a href="#" class="btn-floating tooltipped" data-position="left" data-delay="9" data-tooltip="This is a Label"><i class="material-icons">label_outline</i></a></li>
-			<li><a href="#" class="btn-floating green tooltipped" data-position="left" data-delay="9" data-tooltip="Ignore Me"><i class="material-icons">dialpad</i></a></li>
-		</ul>
-	</div>
-	<!--FAB-->
-	<!-- Modal Structure -->
-	  <div id="modal1" class="modal" style="margin-top:100px">
-	    <div class="modal-content">
-	      <h4>Welcome Visitors!</h4>
-	      <p>So...*sigh*. Nothing much, just a website I made out of boredom.<br>
+		<!--Preloader-->
+		<div id="preloader">
+			<div id="status">&nbsp;</div>
+		</div>
+		<!--Preloader-->
+		<!--FAB-->
+		<div class="fixed-action-btn click-to-toggle" style="bottom:35px; right:24px">
+			<a class="btn-floating btn-large waves-effect waves-dark red">
+				<i class="material-icons">add</i>
+			</a>
+			<ul>
+				<li><a href="#" class="btn-floating orange tooltipped" data-position="left" data-delay="9" data-tooltip="Thumbs Up" onclick="Materialize.toast('Thank You!',1000,'blue')"><i class="material-icons">thumb_up</i></a></li>
+				<li><a href="#" class="btn-floating tooltipped" style="background-color:#FF3D00" data-position="left" data-delay="9" data-tooltip="Thumbs Down" onclick="Materialize.toast('Hmm.. OK!',1000,'red')"><i class="material-icons">thumb_down</i></a></li>
+				<li><a href="#" class="btn-floating tooltipped" data-position="left" data-delay="9" data-tooltip="This is a Label"><i class="material-icons">label_outline</i></a></li>
+				<li><a href="#" class="btn-floating green tooltipped" data-position="left" data-delay="9" data-tooltip="Ignore Me"><i class="material-icons">dialpad</i></a></li>
+			</ul>
+		</div>
+		<!--FAB-->
+		<!-- Modal Structure -->
+		<div id="modal1" class="modal" style="margin-top:100px">
+			<div class="modal-content">
+				<h4>Welcome Visitors!</h4>
+				<p>So...*sigh*. Nothing much, just a website I made out of boredom.<br>
 					Tried to animate few elements of the Webpage. Please take your time to check them out and suggest any improment (or bugs).<br><br>
-
 					*Dropped Mobile Support At the moment <br>
 					<span class="highlight">[Beacause I&#8217;m just too lazy to fix and Recruiters don&#8217;t search people on smartphones.]</span>
 				</p>
-	    </div>
-	    <div class="modal-footer">
-	      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
-	    </div>
-	  </div>
-
-
-	<!--Nav-Bar-->
-	<div class="navbar-fixed">
-		<nav id="nav" style="background-color:#34495e">
-			<a href="#home" class="brand-logo center">
-				<img class="tooltipped" data-position="right" data-delay="1" data-tooltip="Sayan Bhowmik" height="60px" src="images/head.png">
-			</a>
-			<ul id="slide-out" class="side-nav" style="background-color:#78909C">
-				<li class="center disabled" style="height:60px">
-					<h3><img src="images/head.png" alt="logo" height="60px" style="float:center; display:inline-block;"></h3><br>
-				</li><hr>
-				<li><a class="wave-dark" style="color:white" href="#!">First Sidebar Link</a></li>
-				<li><a style="color:white" href="#!">Second Sidebar Link</a></li>
-				<li class="no-padding">
-					<ul class="collapsible collapsible-accordion">
-						<li><a class="collapsible-header" style="color:white" >Dropdown<i class="mdi-navigation-arrow-drop-down"></i></a>
+			</div>
+			<div class="modal-footer">
+				<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+			</div>
+		</div>
+		<!--Nav-Bar-->
+		<div class="navbar-fixed">
+			<nav id="nav" style="background-color:#34495e">
+				<a onclick="$('#wall').animatescroll({easing:'easeInOutExpo',scrollSpeed:1000});" class="brand-logo center">
+					<img class="tooltipped" data-position="right" data-delay="1" data-tooltip="Sayan Bhowmik" height="60px" src="images/head.png">
+				</a>
+				<ul id="slide-out" class="side-nav" style="background-color:#78909C">
+					<li class="center disabled" style="height:60px">
+						<h3><img src="images/head.png" alt="logo" height="60px" style="float:center; display:inline-block;"></h3><br>
+					</li><hr>
+					<li><a class="wave-dark" style="color:white" href="#!">First Sidebar Link</a></li>
+					<li><a style="color:white" href="#!">Second Sidebar Link</a></li>
+					<li class="no-padding">
+						<ul class="collapsible collapsible-accordion">
+							<li><a class="collapsible-header" style="color:white" >Dropdown<i class="mdi-navigation-arrow-drop-down"></i></a>
 							<div class="collapsible-body">
 								<ul>
 									<li><a href="#!">First</a></li>
@@ -98,24 +89,22 @@
 			</a>
 			<br>
 			<center>
-				<div class="botMenu" style="float:center;display:inline-block">
-					<ul class="center" id="temp_menu">
-						<li><a href="#!">First</a></li>
-						<li><a href="#!">Second</a></li>
-						<li><a href="#!">Third</a></li>
-						<li><a href="#!">Fourth</a></li>
-					</ul>
-				</div>
+			<div class="botMenu" style="float:center;display:inline-block">
+				<ul class="center" id="temp_menu">
+					<li><a onclick="$('#work').animatescroll({scrollSpeed:1500,easing:'easeInQuint',padding:80});">Work</a></li>
+					<li><a onclick="$('#about').animatescroll({scrollSpeed:2500,easing:'easeOutBounce',padding:80});">About Me</a></li>
+					<li><a onclick="$('#social').animatescroll({scrollSpeed:2000,easing:'easeInOutSine',padding:80});">Social</a></li>
+					<li><a onclick="$('#contact').animatescroll({scrollSpeed:2000,easing:'easeInCirc',padding:80});">Contact</a></li>
+				</ul>
+			</div>
 			</center>
 		</nav>
 	</div>
 	<!--Nav-Bar-->
-	<a name="home"></a>
 	<div class="pic" id="wall" style="background-image: url(images/wall-1.jpg);" data-stellar-background-ratio="-0.15" data-stellar-vertical-offset="-50"></div>
-
-	<div class="card waves-effect waves-dark" data-stellar-background-ratio="0.25" style="display:inline-block; ">
+	<div class="card waves-effect waves-dark" data-stellar-background-ratio="0.25">
 		<div id="post1" class="content">
-			<h4>Hello Stranger!</h4>
+			<h4>Hello Stranger !</h4>
 			<hr>
 			<p> Welcome to my homepage.
 				<br>Still Under Contruction.
@@ -124,47 +113,89 @@
 			</p>
 		</div>
 	</div>
-	<div class="card waves-effect waves-dark" style="margin-top:-100px">
+	<div class="card waves-effect waves-dark" id="work">
 		<div id="post2" class="content">
 			<h4>My Works</h4>
 			<hr>
-			<p>
-				<font size="+1">LOL !</font>
-				<br> I'm Such a &nbsp;
-				<span class="highlight">Noob !</span>
-			</p>
+			
 		</div>
 	</div>
-
-	<div class="card waves-effect waves-dark" style="margin-top:-100px">
+	<div class="card waves-effect waves-dark" id="about">
 		<div id="post3" class="content">
-			<h4>About me</h4>
-			<hr>
-			<p>
-				I am not a Creative Person.
-				<br>I Suck !</p>
-			<div style="height:5px"></div>
+				<h4>About me</h4>
+				<hr>
+				<p>
+					
 		</div>
-		<center>
-			<div class="highlight block" style="float:center;display: inline-block; margin: -40px;padding: -80px;">
-				I'm a creep,I'm a Weirdo
-				<br> What the hell am I doing here?
-				<br> I don't belong here...
-
-			</div>
 		</center>
 	</div>
 
+	<div class="card waves-effect waves-dark" id="social">
+		<div id="post4" class="content">
+		<h4>Social</h4>
+		<hr>
+		
+
+
+		</p>
+				
+		</div>
+		</center>
+	</div>
+
+<div class="card" id="contact" style="height:540px">
+	<div id="post4" class="content">
+		<h4>Contact me</h4>
+		<hr><div style="height:20px"></div>
+		<div class="row">
+			<form class="col s12">
+				<div class="row">
+					<div class="input-field col s6">
+						<input id="first_name" type="text" class="validate">
+						<label for="first_name">First Name</label>
+					</div>
+					<div class="input-field col s6">
+						<input id="last_name" type="text" class="validate">
+						<label for="last_name">Last Name</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="email" type="email" class="validate">
+						<label for="email">Email</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<textarea id="textarea1" class="materialize-textarea"></textarea>
+						<label for="textarea1">Say Something</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12">
+						<input type="checkbox" id="test6" checked="checked" />
+						<label for="test6">Subscribe to Newsletter</label>
+					</div>
+					
+						<a style="float:right" class="waves-effect waves-light btn"><i class="material-icons left">send</i>Submit</a>
+					
+					</div>
+				</form>
+			</div>
+			
+		</div>
+		</center>
+	</div>
+</div>
 
 
 
 	<script>
 		$(document).ready(function() {
 			$(".button-collapse").sideNav();
+
 		});
 	</script>
-
-
 	<!--__Nav collapse__-->
 	<script type="text/javascript">
 		function Scroll() {
@@ -191,8 +222,12 @@
 		}
 		window.addEventListener("scroll", Scroll);
 	</script>
-
-
-</body>
-
+</body><br>
+<footer class="page-footer" style="background-color:#34495e" data-stellar-background-ratio="-0.15">
+	<div class="footer-copyright">
+		<div class="container">&#169; 2016-17 Snbk97
+			<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+		</div>
+	</div>
+</footer>
 </html>
